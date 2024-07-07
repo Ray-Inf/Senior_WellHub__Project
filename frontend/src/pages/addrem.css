@@ -1,0 +1,83 @@
+/* AddMedication.css */
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.add-medication-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.add-medication-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.add-medication-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.add-medication-container label {
+  margin-bottom: 15px;
+  color: #fff;
+  width: 100%;
+}
+
+.add-medication-container input[type="text"],
+.add-medication-container input[type="number"],
+.add-medication-container select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 16px;
+}
+
+.add-medication-container select {
+  width: 100%;
+}
+
+.add-medication-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.add-medication-container .time-checkboxes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-medication-container .time-checkboxes label {
+  display: flex;
+  align-items: center;
+}
+
+.add-medication-container button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.add-medication-container button:hover {
+  background-color: #0056b3;
+}

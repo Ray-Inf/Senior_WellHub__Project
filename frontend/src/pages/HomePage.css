@@ -1,0 +1,113 @@
+body {
+  background-image: url('https://i.pinimg.com/736x/92/81/e8/9281e8e8a1d0db79fd7d88f0e85daad4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.header {
+  background-color: #2a2a2a; /* Slightly lighter background for header */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header h1 {
+  color: #ffe9e9; /* Light text color */
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-right: 20px;
+  color: #ffe9e9; /* Light text color */
+  font-size: 18px;
+}
+
+.signout-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #007bff; /* Primary color for button */
+  color: white;
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.signout-btn:hover {
+  background-color: #0056b3; /* Darker hover state */
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+.welcome-text {
+  font-size: 36px; /* Large font size for welcome text */
+  color: #3a3a3a; /* Light text color */
+  margin-bottom: 40px; /* Space below welcome text */
+}
+
+.section {
+  background-color: #2a2a2a; /* Slightly lighter background for sections */
+  padding: 20px;
+  margin-bottom: 20px; /* Space between sections */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.section h2 {
+  color: #ffe9e9; /* Light text color */
+  font-size: 24px; /* Larger font size for section headings */
+  margin-bottom: 16px; /* Space below headings */
+}
+
+.section p {
+  color: #e0e0e0; /* Light text color */
+  font-size: 16px; /* Font size for section paragraphs */
+}
+
+.btn {
+  width: 100%;
+  padding: 12px; /* Larger padding */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  background-color: #007bff; /* Primary color for button */
+  color: white;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allow padding and background color on links */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker hover state */
+}
+
+@media (min-width: 768px) {
+  .btn {
+    width: auto; /* Set auto width for larger screens */
+    padding: 12px 24px; /* Add horizontal padding for larger screens */
+  }
+}

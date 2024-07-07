@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e; /* Dark background */
+}
+
+.auth-form {
+  background-color: #2a2a2a; /* Slightly lighter background for form */
+  padding: 40px;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  width: 320px; /* Slightly wider for better spacing */
+  text-align: center;
+}
+
+.auth-heading {
+  margin-bottom: 24px; /* More spacing */
+  color: #ffe9e9; /* Light text color */
+  font-size: 24px; /* Slightly larger font size */
+}
+
+.input-group {
+  margin-bottom: 20px; /* More spacing */
+}
+
+.input-group input {
+  width: 100%; /* Full width */
+  padding: 12px; /* Slightly larger padding */
+  border: 1px solid #444; /* Darker border */
+  border-radius: 8px; /* More rounded corners */
+  background-color: #333; /* Dark background for inputs */
+  color: #e0e0e0; /* Light text color */
+  box-sizing: border-box;
+  font-size: 16px; /* Larger font size for better readability */
+}
+
+.input-group input[type="password"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Slightly larger padding */
+  border: 1px solid #666666; /* Darker border */
+  border-radius: 8px; /* More rounded corners */
+  background-color: #444; /* Dark background for inputs */
+  color: #e0e0e0; /* Light text color */
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.input-group input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Slightly larger padding */
+  border: 1px solid #666666; /* Darker border */
+  border-radius: 8px; /* More rounded corners */
+  background-color: #444; /* Dark background for inputs */
+  color: #e0e0e0; /* Light text color */
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.input-group input::placeholder {
+  color: #999; /* Light placeholder text color */
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px; /* Larger padding */
+  border: none;
+  border-radius: 8px; /* More rounded corners */
+  background-color: #007bff; /* Primary color for button */
+  color: white;
+  font-size: 18px; /* Larger font size */
+  cursor: pointer;
+  margin-top: 20px; /* More spacing */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.auth-btn:hover {
+  background-color: #0056b3; /* Darker hover state */
+}
+
+.auth-link {
+  margin-top: 20px;
+  color: #007bff; /* Primary color for links */
+  font-size: 14px; /* Slightly smaller font size for links */
+}
+
+.auth-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #ff4d4d; /* Red color for error messages */
+  margin-bottom: 20px; /* More spacing */
+  font-size: 14px; /* Slightly smaller font size */
+}

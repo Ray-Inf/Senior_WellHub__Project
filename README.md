@@ -15,10 +15,14 @@ This project is a web application made using React and Django designed to help s
 1. **Navigate to the backend directory to create virtual env**:
      ```sh
      cd doctor-backend-main\virt\Scripts
+     ```
+     ```sh
      activate
+     ```
+     ```sh
      cd ..\api
      ```
-2. **Run backend server**:
+3. **Run backend server**:
     ```sh
      py manage.py runserver
     ```

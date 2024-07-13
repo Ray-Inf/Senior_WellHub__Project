@@ -12,7 +12,11 @@ This project is a web application made using React and Django designed to help s
 
 ### Backend (Django)
 
-1. **Navigate to the backend directory to create virtual env**:
+1. **Create a virtual environment**:
+    ```sh
+    python -m venv env
+    ```
+2. **Navigate to the backend directory to create virtual env**:
      ```sh
      cd doctor-backend-main\virt\Scripts
      ```
@@ -34,12 +38,7 @@ This project is a web application made using React and Django designed to help s
     cd ../frontend
     ```
 
-2. **Install frontend dependencies**:
-    ```sh
-    npm install
-    ```
-
-3. **Start the React development server**:
+2. **Start the React development server**:
     ```sh
     npm start
     ```

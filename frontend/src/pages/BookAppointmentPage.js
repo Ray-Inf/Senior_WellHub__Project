@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link , useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./BookAppointmentPage.css"; // Import CSS file for styling
 import axios from "axios";
 import Notification from "./Notification";
@@ -16,6 +16,11 @@ const BookAppointmentPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    const token = localStorage.getItem("token"); // Retrieve token from localStorage
+    if (!token) {
+      navigate("/login"); // Redirect to login if no token is found
+      return;
+    }
     // Fetch doctors from the backend
     axios
       .get("http://127.0.0.1:8000/api/doctors/")
@@ -31,7 +36,7 @@ const BookAppointmentPage = () => {
     if (showSuccessPopup) {
       // Navigate to home page after a delay (example: 3 seconds)
       setTimeout(() => {
-        navigate("/");
+        navigate("/home");
       }, 3000); // Redirect after 3 seconds
     }
   }, [showSuccessPopup, navigate]);
@@ -94,7 +99,7 @@ const BookAppointmentPage = () => {
     <div>
       <header className="header">
         <div className="header-content">
-        <h1 className="page-title">Book Appointment</h1>
+          <h1 className="page-title">Book Appointment</h1>
           <Link to="/home" className="home-link">
             <button className="home-btn">Home</button>
           </Link>
@@ -110,7 +115,9 @@ const BookAppointmentPage = () => {
               required
               className="select-doctor"
             >
-              <option value="" className="select-doctor">Select a Doctor</option>
+              <option value="" className="select-doctor">
+                Select a Doctor
+              </option>
               {doctors.map((doc) => (
                 <option key={doc.id} value={doc.id}>
                   {doc.name}
@@ -145,24 +152,24 @@ const BookAppointmentPage = () => {
             />
           </div>
           <div>
-          <button type="submit" className="btn">
-            Submit
-          </button>
-          {showSuccessPopup && (
-            <Notification
-              message="Appointment booked successfully!"
-              onClose={() => setShowSuccessPopup(false)}
-            />
-          )}
+            <button type="submit" className="btn">
+              Submit
+            </button>
+            {showSuccessPopup && (
+              <Notification
+                message="Appointment booked successfully!"
+                onClose={() => setShowSuccessPopup(false)}
+              />
+            )}
           </div>
           <div>
-          <button
-            type="button"
-            className="btn btn-secondary"
-            onClick={() => navigate("/home")}
-          >
-            Cancel
-          </button>
+            <button
+              type="button"
+              className="btn btn-secondary"
+              onClick={() => navigate("/home")}
+            >
+              Cancel
+            </button>
           </div>
         </form>
       </div>

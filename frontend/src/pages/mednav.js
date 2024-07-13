@@ -17,6 +17,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className='heading'><b> Medication Management</b>  </div>
       <ul className='abc'>
+       
         <li>
           <NavLink to="/medicine" >
           Medication List

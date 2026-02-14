@@ -43,5 +43,5 @@ This project is a web application made using React and Django designed to help s
     npm start
     ```
 
-    This will start the application on `http://localhost:3000`.
+    This will start the application on `http://localhost`.
 
